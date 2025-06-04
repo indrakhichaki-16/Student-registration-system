@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta charset and viewport meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link for importing fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Link to Font Awesome stylesheet for using icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Link for favicon -->
+    <link rel="icon" href="icon.png"/>
+
+    <!-- External Javascript file -->
+    <script src="tabledata.js" defer></script>
+
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="styling.css">
+
+    <!-- Title of webpage -->
+    <title>Student Registration System</title>
+
+</head>
+
+<body>
+    <!-- Header of webpage -->
+    <header class="main-header">
+        <div class="header-left">
+            <img src="logo.png" alt="Sunrise Academy Logo" class="school-logo">
+            <span class="school-name">Sunrise Academy</span>
+        </div>
+        <h1>Student Registration System</h1>
+    </header>
+
+    <!-- Description summarizing the system's functionalities -->
+    <div class="description">
+        This system enables the registration of student details. Users can update student information as needed to maintain accuracy and relevance. <br>
+        The system ensures efficient handling of student data for administrative and academic purposes.
+    </div>
+
+    <div class="container">
+
+        <!-- Form section - creating the form for inputing student details -->
+        <div class="form-section">
+            <form id="studentForm">
+                <label for="name">Student Name :</label>
+                <input type="text" id="name" required>
+                <label for="studentId">Student Id :</label>
+                <input type="number" id="studentId" required>
+                <label for="class">Class :</label>
+                <input type="number" id="class" max="12" min="1" required>
+                <label for="rollNo">Roll No :</label>
+                <input type="number" id="rollNo" required>
+                <label for="address">Address :</label>
+                <input type="text" id="address" required>
+                <label for="contact">Contact No :</label>
+                <input type="number" id="contact" minlength="10" maxlength="10" required>
+                <label for="email">Email :</label>
+                <input type="email" id="email" required>
+                <button type="submit" id="addBtn">ADD</button>
+            </form>
+        </div>
+
+        <!-- Table section - creating the table to display the student details submitted -->
+        <div class="table-section">
+            <table id="studentTable">
+                <thead>
+                    <tr>
+                        <th>NAME</th>
+                        <th>ID</th>
+                        <th>CLASS</th>
+                        <th>ROLL NO.</th>
+                        <th>ADDRESS</th>
+                        <th>CONTACT</th>
+                        <th>EMAIL</th>
+                        <th colspan="2">ACTIONS</th>
+                    </tr>
+                </thead>
+                <tbody> 
+                    <!-- Student records will appear here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <!-- Footer of webpage -->
+    <footer style="background-color: rgba(47, 47, 47, 0.295); backdrop-filter: blur(10px);">
+        <div style="max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center;">
+
+            <!-- Copyright label -->
+            <div style="color: #ffffffbb;">
+                <p>&copy; Sunrise Academy </p>
+                <p>All rights reserved</p>
+            </div>
+
+            <!-- Email icon functionality -->
+            <div class="social-icons" style="margin: 0;">
+                <span class="social-icon">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sunriseacademyadmin@edu.in" target="_blank" aria-label="Email" style="color: #e5e7eb;"><i class="fas fa-envelope"></i></a>
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
