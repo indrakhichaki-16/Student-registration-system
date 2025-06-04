@@ -3,3 +3,4 @@ This project is developed to register student details such as name, class, addre
 Additionally, it provides functionalities for editing and deleting records.
 
 Link to Github Repository
+https://github.com/indrakhichaki-16/Student-registration-system
